@@ -11,11 +11,8 @@ const ThemeSettings = () => {
     setColor,
     currentColor,
     currentMode,
-    setCurrentColor,
-    setCurrentMode,
     setMode,
     setThemeSettings,
-    themeSettings
   } = useStateContext()
 
   return (
