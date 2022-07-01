@@ -41,7 +41,8 @@ const NavBar = () => {
   }, [screenSize])
 
   return (
-    <div className='flex justify-between p-2 md:mx-6 relative'>
+    <div className='flex justify-between p-2 md:mx-6 relative'
+    >
       <NavButton title={"Menu"} customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} color={currentColor} icon={<AiOutlineMenu />} />
 
       <div className="flex">
