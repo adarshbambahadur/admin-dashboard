@@ -11,7 +11,7 @@ const initialState = {
 
 export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
-  const [isCliked, setIsCliked] = useState(initialState);
+  const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
   const [currentColor, setCurrentColor] = useState('#03C9D7');
   const [currentMode, setCurrentMode] = useState('Light');
@@ -34,7 +34,7 @@ export const ContextProvider = ({ children }) => {
   };
 
   const handleClick = (clicked) => {
-    setIsCliked({ ...initialState, [clicked]: true });
+    setIsClicked({ ...initialState, [clicked]: true });
   };
 
   return (
@@ -42,8 +42,8 @@ export const ContextProvider = ({ children }) => {
       value={{
         activeMenu,
         setActiveMenu,
-        isCliked,
-        setIsCliked,
+        isClicked,
+        setIsClicked,
         handleClick,
         screenSize,
         currentColor,
